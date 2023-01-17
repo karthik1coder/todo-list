@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+  <link href="index.css" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+
+
+
+      <div style="padding:20px; margin-left:50px; margin-top:10px; background-color: brown; width:260px; 
+      display:inline-block" >
+        <label for="todo">TASK NAME:</label>
+        <br>
+      <input type="text"  id="todo" name="todo" style="border: 0px solid white" required>
+      <br>
+      
+      
+      <label for="desc">DESCRIPTION:</label>
+      <br>
+      
+      
+      
+      <textarea id="desc" rows="20" cols="32" required>
+      </textarea>
+      
+      <br>
+      <button id="save" onclick="save()">save</button> 
+     
+      <p id="display"></p>
+
+<br>
+<label for="type">Choose your option:</label>
+
+<select name="type" id="type">
+
+<option value="all" onsubmit="all()">all</option>
+<option value="complete" onselect="complete()">complete</option>
+<option value="in-complete" onclick="incomplete()">in-complete</option>
+
+
+</select>
+
+<button onclick="final()">click</button>
+
+
+    </div>
+
+  
+<div id="task">
+
+</div>
+
+
+
+<script src="index.js">
+
+</script>
+
+
+    </body>
+
+
+</html>
